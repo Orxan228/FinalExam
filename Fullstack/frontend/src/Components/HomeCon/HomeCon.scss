@@ -1,0 +1,289 @@
+.content{
+    width: 100%;
+
+    &__slider{
+        width: 100%;
+
+        &__item{
+            width: 100%;
+            padding: 300px;
+            color: white;
+            z-index: 9999;
+            text-shadow: 1px 0px 4px rgba(0, 0, 0, 1);
+            p:nth-child(1){
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            p:nth-child(2){
+                font-size: 3rem;
+                font-weight: 700;
+
+                margin: 20px 0;
+            }
+            p:nth-child(3){
+                font-size: 1rem;
+                font-weight: 700;
+                width: 40%;
+                line-height: 20px;
+            }
+
+            button{
+                border: none;
+                background-color: rgb(0, 217, 255);
+                color: white;
+                width: 250px;
+                height: 50px;
+                margin-top: 20px;
+                border-radius: 5px;
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+        }
+
+        .item-1{
+            background-image: url("https://preview.colorlib.com/theme/onepro/img/slider/slide-1.jpg.webp");
+            filter: brightness(0.95);
+        }
+        .item-2{
+            background-image: url("https://preview.colorlib.com/theme/onepro/img/slider/slide_2.jpg.webp");
+            filter: brightness(0.95);
+
+        }
+        .item-3{
+            background-image: url("https://preview.colorlib.com/theme/onepro/img/slider/slide_1.jpg.webp");
+            background-position: center;
+            filter: brightness(0.95);
+
+        }
+    }
+
+    &__filter{
+        width: 100%;
+        padding: 100px 0 50px 200px;
+        display: flex;
+        gap: 30px;
+
+        input{
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.354);
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.354);
+            border-radius: 5px;
+        }
+    }
+
+    &__vitrine{
+        width: 100%;
+        padding: 60px 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        &__item{
+            width: 31%;
+            border: 1px solid rgba(0, 0, 0, 0.583);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 40px;
+            &__logo{
+                border: 1px solid black;
+                margin: 0 auto;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__info{
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding: 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            &__desc{
+                
+                p{
+                    text-align: center;
+                    padding: 10px;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+
+            &__btns{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px 50px;
+
+                button{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    background-color: rgb(0, 225, 255);
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+
+                    &:last-child{
+                        background-color: red;
+                    }       
+
+                    &:hover{
+                        background-color: black;
+                        transition: ease-out 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__projects{
+        width: 100%;
+        padding: 60px 200px;
+
+        &__top{
+            width: 100%;
+
+            &__logo{
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 20px;
+            }
+            &__line{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &--line{
+                    width: 40px;
+                    border: 3px solid rgb(0, 225, 255);
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__desc{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 30px 0;
+                p{
+                    text-align: center;
+                    width: 50%;
+                }
+            }
+
+            &__items{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                li{
+                    list-style: none;
+                    font-weight: 700;
+
+                    &:hover{
+                        color: rgb(0, 225, 255);
+                        transition: ease-out 0.3s;
+                    }
+                }
+            }
+        }
+
+        &__bottom{
+            padding: 50px 200px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+
+            &__item{
+                width: 32%;
+                min-height: 250px;
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_1.jpg.webp");
+                margin-bottom: 20px;
+
+                &:hover &__inner{
+                    opacity: 1;
+                    transition: ease-out 0.3s;
+                }
+
+                &__inner{
+                    padding: 15px;
+                    background-color: rgba(0, 162, 255, 0.712);
+                    opacity: 0;
+                    
+                    &__frame{
+                        border: 1px solid white;
+                        padding: 60px 20px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 50px;
+                        color: white;
+
+                        p:first-child{
+                            font-weight: 700;
+                            font-size: 1.5rem;
+                        }
+                        p:last-child{
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
+
+            }
+
+            &__item:nth-child(2)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_2.jpg.webp");
+            }
+            &__item:nth-child(3)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_3.jpg.webp");
+            }
+            &__item:nth-child(4)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_4.jpg.webp");
+            }
+            &__item:nth-child(5)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_5.jpg.webp");
+            }
+            &__item:nth-child(6)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_6.jpg.webp");
+            }
+            &__item:nth-child(7)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_7.jpg.webp");
+            }
+            &__item:nth-child(8)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_8.jpg.webp");
+            }
+            &__item:nth-child(9)
+            {
+                background-image: url("https://preview.colorlib.com/theme/onepro/img/portfolio/portfolio_9.jpg.webp");
+            }
+        }
+    }
+
+
+}
